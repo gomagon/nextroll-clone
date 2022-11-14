@@ -1,0 +1,26 @@
+.Container {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  width: 100%;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Container h1, .Container span {
+  margin: 10px;
+}
+
+@media screen and (max-width:1050px) {
+  .Container {
+    height: 150px;
+  }
+  .Container h1 {
+    font-size: larger;
+  }
+  .Container span {
+    font-size: medium;
+  }
+}

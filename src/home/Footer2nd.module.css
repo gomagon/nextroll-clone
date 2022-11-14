@@ -1,0 +1,66 @@
+.Container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.AllArea {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 30px 0px;
+}
+.AllArea div:first-child {
+  display: flex;
+  justify-content: space-around;
+}
+.AllArea img {
+  height: 24px;
+  width: 140px;
+  object-fit: contain;
+  object-position: 0% 0%;
+}
+.AllArea img:hover {
+  cursor: pointer;
+}
+.AllArea span {
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+}
+.MenuArea label {
+  font-size: small;
+  font-weight: bold;
+  margin: 0px 20px;
+}
+.AllArea label:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width:1050px) {
+  .AllArea {
+    display: flex;
+    flex-direction: column;
+  }
+  .AllArea div:first-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .MenuArea label {
+    margin: 0px 15px 0px 0px;
+  }
+  .AllArea img {
+    margin-top: 20px;
+  }
+  .AllArea span {
+    font-size: 12px;
+    margin: 10px;
+    text-align: left;
+  }
+  .MenuArea {
+    display: flex;
+    flex-direction: row;
+  }
+  .MenuArea div {
+    margin-left: auto;
+  }
+}

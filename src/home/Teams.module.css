@@ -1,0 +1,87 @@
+.Container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Container h1 {
+  text-align: center;
+}
+.AllArea {
+  width: 90%;
+  padding: 30px 0px;
+}
+.ButtonArea {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.Button {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(40, 0, 80);
+  width: 29%;
+  height: 140px;
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  transition: 0.3s;
+}
+.Button__Open {
+  height: 70px;
+  position: relative;
+}
+.Button__Open_Border {
+  height: 70px;
+  position: relative;
+}
+.Button__Open::after {
+  background-color:firebrick;
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  transition: all .3s ease;
+  width: 0px;
+  height: 9px;
+  left: 0px;
+  bottom: 0px;
+}
+.Button__Open_Border::after {
+  width: 100%;
+}
+.Button:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+}
+.MessageAreas {
+  width: 60%;
+  position: relative;
+  margin: 10px auto;
+}
+.MessageSpan {
+  position: absolute;
+  top: 145px;
+  height: 0px;
+  overflow-y: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.MessageSpan__Open {
+  top: 0;
+  height: 145px;
+}
+.DummySpace {
+  height: 0;
+}
+.DummySpace__Open {
+  height: 145px;
+}
+
+@media screen and (max-width:1050px) {
+  .AllArea {
+    display: none;
+  }
+}

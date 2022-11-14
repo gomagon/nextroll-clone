@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+.container {
+  top: 60px;
+  position: relative;
+}
+
+.MainBlackAreaOverImage {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.MainCommonImage {
+  position: absolute;
+  object-fit: none;
+  width: 100%;
+  height: 360px;
+  object-position: 0% 0%;
+}
+.MainImage1 {
+  animation: imageAnime1 20s infinite;
+}
+.MainImage2 {
+  animation: imageAnime2 20s infinite;
+}
+.MainImage3 {
+  animation: imageAnime3 20s infinite;
+}
+.MainImage4 {
+  animation: imageAnime4 20s infinite;
+}
+
+@keyframes imageAnime1 {
+  0% { opacity: 1; }
+  14% { opacity: 1; }
+  28% { opacity: 0; }
+  42% { opacity: 0; }
+  56% { opacity: 0; }
+  70% { opacity: 0; }
+  85% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes imageAnime2 {
+  0% { opacity: 0; }
+  14% { opacity: 0; }
+  28% { opacity: 1; }
+  42% { opacity: 1; }
+  56% { opacity: 0; }
+  70% { opacity: 0; }
+  85% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes imageAnime3 {
+  0% { opacity: 0; }
+  14% { opacity: 0; }
+  28% { opacity: 0; }
+  42% { opacity: 0; }
+  56% { opacity: 1; }
+  70% { opacity: 1; }
+  85% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes imageAnime4 {
+  0% { opacity: 0; }
+  14% { opacity: 0; }
+  28% { opacity: 0; }
+  42% { opacity: 0; }
+  56% { opacity: 0; }
+  70% { opacity: 0; }
+  85% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.Readme {
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  color:aqua;
+  font-weight: bold;
+  font-size: 30px;
+}
+.MainTextArea {
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.MainTextArea span {
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+}
+.CursolSpan {
+  color: white;
+  font-size: 40px;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: blink;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.MainButtonArea {
+  position: absolute;
+  top: 230px;
+  width: 100%;
+  z-index: 3;
+}
+.MainButtonArea div {
+  display: flex;
+  justify-content: center;
+}
+.MainButtonArea button {
+  margin: 15px;
+  padding: 8px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.6s;
+}
+.MainButtonArea button:hover {
+  cursor: pointer;
+}
+.MainButtonArea button:first-child {
+  color: white;
+  background-color:red;
+}
+.MainButtonArea button:first-child:hover {
+  background-color: white;
+  color: red;
+}
+.MainButtonArea button:last-child {
+  color: white;
+  background-color:transparent;
+  border: solid 1px white;
+}
+.MainButtonArea button:last-child:hover {
+  background-color: white;
+  color: red;
+}
+
+.Space {
+  height: 400px;
+}
+
+@media screen and (max-width: 1050px) {
+  .Readme {
+    top: 15px;
+    width: 100%;
+    font-size: 15px;
+  }
+  .MainTextArea {
+    text-align: center;
+    flex-direction: column;
+  }
+  .container {
+    top: 40px;
+  }
+  .MainBlackAreaOverImage {
+    height: 200px;
+  }
+  .MainCommonImage {
+    height: 200px;
+  }
+  .MainTextArea {
+    top: 40px;
+  }
+  .MainTextArea span {
+    font-size: 20px;
+  }
+  .MainButtonArea {
+    top: 110px;
+  }
+  .Space {
+    height: 250px;
+  }
+}

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Container {
+  width: 100%;
+}
+
+.HeaderArea {
+  display: flex;
+  background-color: white;
+  position:fixed;
+  z-index: 100;
+  top:0; left:0;
+  height: 60px;
+  width: 100%;
+  border-bottom: solid 2px lightgray;
+  align-items: center;
+}
+
+.HeaderMenusArea {
+  display: flex;
+  align-items: center;
+}
+.HeaderMenusArea label {
+  font-weight: bold;
+  font-size: 13px;
+  transition: all 0.6s;
+  color:black;
+  cursor: pointer;
+  margin: 17px 15px;
+}
+.HeaderMenusArea label:hover {
+  color:fuchsia;
+  cursor: pointer;
+}
+.HeaderLogoArea {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 20px;
+}
+.HeaderLogoArea img {
+  cursor: pointer;
+  height: 24px;
+  width: 140px;
+  object-fit: contain;
+  object-position: 0% 0%;
+}
+
+.HeaderIconsArea {
+  display: flex;
+  align-items: center;
+}
+.HeaderIconsArea * {
+  border: solid 1px lightgrey;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  margin: 0px 5px;
+}
+.HeaderIconsArea *:hover {
+  cursor: pointer;
+}
+
+.HeaderIconsArea_SM {
+  display: none;
+  align-items: center;
+  height: 20px;
+  margin: 0px 10px;
+  display: none;
+  justify-content: center;
+  overflow-y: hidden;
+}
+.HeaderIconsArea_SM * {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+}
+.HeaderIconsArea_SM *:hover {
+  cursor: pointer;
+}
+
+.DrawerMenu {
+  top: 0;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+  overflow-y: hidden;
+  position: fixed;
+  z-index: 50;
+  color: white;
+  text-align: center;
+  opacity: 0.8;
+}
+.DrawerMenu__isOpen {
+  height: 100vh;
+}
+.DrawerMenu ul {
+  border-bottom: solid 1px gray;
+  padding: 15px 0px;
+  font-weight: bold;
+}
+.DrawerMenu ul:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.MenuIcon {
+  position: relative;
+  transition: all 0.3s;
+  height: 25px;
+  width: 25px;
+}
+.MenuIcon__isOpen {
+  transform: translateY(11px)
+}
+
+@media screen and (max-width: 1050px) {
+  .HeaderArea {
+    height: 40px;
+  }
+  .HeaderIconsArea_SM {
+    display: flex;
+  }
+  .HeaderMenusArea {
+    display: none;
+  }
+  .HeaderIconsArea {
+    display: none;
+  }
+}

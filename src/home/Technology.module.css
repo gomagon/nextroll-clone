@@ -1,0 +1,53 @@
+.Container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.AllArea {
+  width: 90%;
+  padding: 30px 0px;
+}
+.AllArea > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.Container h1 {
+  margin: 40px;
+  text-align: center;
+}
+.Container span {
+  font-size: medium;
+}
+.Container img {
+  height: 120px;
+  width: 170px;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+.ImageArea {
+  flex: 0 0 calc(18%);
+}
+
+@media screen and (max-width:1050px) {
+  .Container h1 {
+    font-size: larger;
+  }
+  .Container span {
+    font-size: small;
+    margin: 20px 0px 0px 0px;
+  }
+  .Container img {
+    height: 80px;
+    width: 100px;
+    margin: 0px 15px;
+    object-fit: contain;
+    object-position: 50% 50%;
+  }
+  .ImageArea {
+    flex: 0 0 calc(9%);
+  }
+}

@@ -1,0 +1,67 @@
+.Container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(65deg, #8127f9 0%, #052dd1 100%);
+}
+.TitleArea {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  padding: 30px 0px;
+}
+.TitleArea > span {
+  font-weight: bold;
+  font-size: 40px;
+  width: 40%;
+  color: white;
+}
+.MessageButtonArea {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+.MessageButtonArea span {
+  font-size: small;
+  color: white;
+}
+.ButtonArea {
+  display: flex;
+  margin-top: 25px;
+}
+.ButtonArea button {
+  border: solid 1px white;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-weight: bold;
+  margin-right: 25px;
+  color: white;
+  background-color: transparent;
+}
+.ButtonArea button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: red;
+}
+
+@media screen and (max-width:1050px) {
+  .TitleArea {
+    display: flex;
+    flex-direction: column;
+  }
+  .MessageButtonArea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .TitleArea > span {
+    font-size: 40px;
+    line-height: 42px;
+    width: 100%;
+  }
+  .ButtonArea {
+    display: flex;
+    margin-top: 15px;
+  }
+}
